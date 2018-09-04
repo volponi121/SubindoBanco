@@ -10,8 +10,7 @@ public class UfTeste {
 
 	@Test
 	public void inserirTest() {
-		EntityManagerFactory factory = Persistence
-				.createEntityManagerFactory("db1start");
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("db1start");
 		EntityManager manager = factory.createEntityManager();
 
 		Uf uf = new Uf();
