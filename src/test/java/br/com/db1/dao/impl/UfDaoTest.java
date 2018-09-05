@@ -1,10 +1,13 @@
 package br.com.db1.dao.impl;
 
+import static org.junit.Assert.*;
+
 import javax.persistence.Query;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
 
 
 import br.com.db1.model.Uf;
@@ -37,7 +40,8 @@ public class UfDaoTest extends AbstractTestCase {
 
 	@Test
 	public void findByIdTest() {
-		
+		Uf uf = dao.findById(5);
+		Assert.assertTrue(dao.findAll());
 	}
 
 	@Test
